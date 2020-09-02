@@ -9,4 +9,4 @@ def new_search(request):
     print(search)
 
 
-    return render(request, 'base.html', {'search': search})
+    return render(request, 'index.html', {'search': search})
