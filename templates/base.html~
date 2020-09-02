@@ -35,7 +35,6 @@
                         <form action="new_search" method="post">
                             {% csrf_token %}
                          <input type="text" placeholder="What would you like to buy">
-                         <i class="fas fa-search"></i>
                         <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
                         </form>
                     </div>
