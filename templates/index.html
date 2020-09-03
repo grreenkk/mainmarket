@@ -1,13 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="index" style="text-align: center">
-    <h2>{{search|title}}</h2>
-    {% for post in final_postings %}
-        <p>{{ post.0 }}</p>
-        <p>{{ post.1 }}</p>
-        <p>{{ post.2 }}</p>
-        <p>{{ post.3 }}</p>
-    {% endfor %}
+<div class="index" >
+    <h2 style="text-align: center;">{{search|title}}</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="" alt="" class="card__image">
+            <div class="card__content">
+                <p>m dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui</p>
+                <p>officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="card__info">
+                <div>
+                    310
+                </div>
+                <div>
+                    <a href="./" class="card__link">View article</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 {% endblock %}
