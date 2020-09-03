@@ -27,7 +27,7 @@ def new_search(request):
         post_link = post.find(class_="core").get('href')
         post_price = post.find(class_="prc").text
         post_image = post.find(class_="img").get('data-src')
-        post_url = '{}'.format('https://www.jumia.com.ng')+post_link
+        post_url = '{}'.format('https://www.jumia.com.ng') + post_link
 
         final_postings.append((post_title, post_url, post_price, post_image))
 
@@ -42,4 +42,4 @@ def new_search(request):
     print(search)
     print(response)
 
-    return render(request, 'index.html', stuffs_for_frontend)
+    return render(request, 'index.html', {'search': search}, stuffs_for_frontend)
