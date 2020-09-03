@@ -25,26 +25,21 @@
                      <a href="">About</a>
                 </div>
             </div>
-
         </nav>
+    </div>
         <div class="content-wrapper">
-            <div class="container">
-
-                <div class="wrapper">
-                    <div class="search_box">
-                        <form action="new_search" method="post">
-                            {% csrf_token %}
-                         <input type="text" name="content" placeholder="What would you like to buy">
-                         <i class="fas fa-search"></i>
-
-                        </form>
-                    </div>
-                    {% block content %}
-                    {% endblock %}
+            <div class="wrapper">
+                <div class="search_box">
+                    <form action="new_search" method="post">
+                        {% csrf_token %}
+                        <input type="text" name="content" placeholder="What would you like to buy">
+                        <i class="fas fa-search"></i>
+                    </form>
                 </div>
             </div>
         </div>
+        {% block content %}
+        {% endblock %}
 
-    </div>
 </body>
 </html>
